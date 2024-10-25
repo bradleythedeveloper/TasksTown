@@ -13,5 +13,6 @@ struct TasksTownApp: App {
         WindowGroup {
             ContentView()
         }
+        .databaseContext(.readWrite { LocalDatabase.database.writer })
     }
 }
