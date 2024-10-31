@@ -1,0 +1,938 @@
+[
+    {
+        "text": "Submit tax documents",
+        "label": "red"
+    },
+    {
+        "text": "Pay electricity bill",
+        "label": "red"
+    },
+    {
+        "text": "Reply to client emails",
+        "label": "red"
+    },
+    {
+        "text": "Schedule a doctor appointment",
+        "label": "yellow"
+    },
+    {
+        "text": "Prepare slides for tomorrow's meeting",
+        "label": "red"
+    },
+    {
+        "text": "Pick up groceries",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize office desk",
+        "label": "green"
+    },
+    {
+        "text": "Water the plants",
+        "label": "green"
+    },
+    {
+        "text": "Backup computer files",
+        "label": "yellow"
+    },
+    {
+        "text": "Take the dog for a walk",
+        "label": "green"
+    },
+    {
+        "text": "Prepare for job interview",
+        "label": "red"
+    },
+    {
+        "text": "Renew car insurance",
+        "label": "yellow"
+    },
+    {
+        "text": "Write a birthday card",
+        "label": "green"
+    },
+    {
+        "text": "Finish reading current book",
+        "label": "green"
+    },
+    {
+        "text": "Plan weekend trip",
+        "label": "yellow"
+    },
+    {
+        "text": "Do laundry",
+        "label": "yellow"
+    },
+    {
+        "text": "Complete project report",
+        "label": "red"
+    },
+    {
+        "text": "Clean the kitchen",
+        "label": "green"
+    },
+    {
+        "text": "Call mum",
+        "label": "yellow"
+    },
+    {
+        "text": "Buy new shoes",
+        "label": "green"
+    },
+    {
+        "text": "Sign up for gym membership",
+        "label": "yellow"
+    },
+    {
+        "text": "Attend conference call",
+        "label": "red"
+    },
+    {
+        "text": "Update personal blog",
+        "label": "green"
+    },
+    {
+        "text": "Install software updates",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize vacation photos",
+        "label": "green"
+    },
+    {
+        "text": "Pay rent",
+        "label": "red"
+    },
+    {
+        "text": "Get car serviced",
+        "label": "yellow"
+    },
+    {
+        "text": "Apply for visa",
+        "label": "red"
+    },
+    {
+        "text": "Return library books",
+        "label": "yellow"
+    },
+    {
+        "text": "Clean out fridge",
+        "label": "green"
+    },
+    {
+        "text": "Book flight tickets",
+        "label": "yellow"
+    },
+    {
+        "text": "Buy groceries for dinner",
+        "label": "yellow"
+    },
+    {
+        "text": "Donate old clothes",
+        "label": "green"
+    },
+    {
+        "text": "Write thank you notes",
+        "label": "green"
+    },
+    {
+        "text": "Take car for an oil change",
+        "label": "yellow"
+    },
+    {
+        "text": "Finish online course",
+        "label": "yellow"
+    },
+    {
+        "text": "Prepare tax documents",
+        "label": "red"
+    },
+    {
+        "text": "Update LinkedIn profile",
+        "label": "green"
+    },
+    {
+        "text": "Send out wedding invitations",
+        "label": "red"
+    },
+    {
+        "text": "Refill prescription medication",
+        "label": "yellow"
+    },
+    {
+        "text": "Set up new phone",
+        "label": "green"
+    },
+    {
+        "text": "Write report for project",
+        "label": "red"
+    },
+    {
+        "text": "Buy gift for friend",
+        "label": "yellow"
+    },
+    {
+        "text": "Go for a jog",
+        "label": "green"
+    },
+    {
+        "text": "Watch new movie release",
+        "label": "green"
+    },
+    {
+        "text": "Check car tire pressure",
+        "label": "yellow"
+    },
+    {
+        "text": "Renew passport",
+        "label": "red"
+    },
+    {
+        "text": "Pay phone bill",
+        "label": "red"
+    },
+    {
+        "text": "Plan family reunion",
+        "label": "yellow"
+    },
+    {
+        "text": "Clean the garage",
+        "label": "green"
+    },
+    {
+        "text": "Finish assignment for school",
+        "label": "red"
+    },
+    {
+        "text": "Write an article for a blog",
+        "label": "green"
+    },
+    {
+        "text": "Attend yoga class",
+        "label": "green"
+    },
+    {
+        "text": "Register for a conference",
+        "label": "yellow"
+    },
+    {
+        "text": "Review investment portfolio",
+        "label": "yellow"
+    },
+    {
+        "text": "Schedule a dentist appointment",
+        "label": "yellow"
+    },
+    {
+        "text": "Buy a birthday gift for colleague",
+        "label": "yellow"
+    },
+    {
+        "text": "Reserve a table for anniversary dinner",
+        "label": "red"
+    },
+    {
+        "text": "Update resume with latest job experience",
+        "label": "yellow"
+    },
+    {
+        "text": "Research vacation destinations",
+        "label": "green"
+    },
+    {
+        "text": "Fill out healthcare enrollment form",
+        "label": "red"
+    },
+    {
+        "text": "Send thank you email to mentor",
+        "label": "green"
+    },
+    {
+        "text": "Pick up dry cleaning",
+        "label": "yellow"
+    },
+    {
+        "text": "Vacuum living room",
+        "label": "green"
+    },
+    {
+        "text": "Meet with financial advisor",
+        "label": "red"
+    },
+    {
+        "text": "Buy ingredients for dinner party",
+        "label": "yellow"
+    },
+    {
+        "text": "Review performance appraisal",
+        "label": "yellow"
+    },
+    {
+        "text": "Send out job applications",
+        "label": "red"
+    },
+    {
+        "text": "Change home air filters",
+        "label": "green"
+    },
+    {
+        "text": "Register for online webinar",
+        "label": "yellow"
+    },
+    {
+        "text": "Prepare dinner for family",
+        "label": "yellow"
+    },
+    {
+        "text": "Create a packing list for trip",
+        "label": "yellow"
+    },
+    {
+        "text": "Finish woodworking project",
+        "label": "green"
+    },
+    {
+        "text": "Review and sign lease agreement",
+        "label": "red"
+    },
+    {
+        "text": "Take recycling out",
+        "label": "green"
+    },
+    {
+        "text": "Renew gym membership",
+        "label": "yellow"
+    },
+    {
+        "text": "Attend friend's wedding",
+        "label": "red"
+    },
+    {
+        "text": "Water outdoor plants",
+        "label": "green"
+    },
+    {
+        "text": "Plan presentation for meeting",
+        "label": "red"
+    },
+    {
+        "text": "Set up automatic bill payments",
+        "label": "yellow"
+    },
+    {
+        "text": "Buy new work shoes",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize bookshelf",
+        "label": "green"
+    },
+    {
+        "text": "Schedule a haircut",
+        "label": "yellow"
+    },
+    {
+        "text": "Research local volunteer opportunities",
+        "label": "green"
+    },
+    {
+        "text": "Purchase train tickets for weekend trip",
+        "label": "yellow"
+    },
+    {
+        "text": "Check credit card statement for accuracy",
+        "label": "red"
+    },
+    {
+        "text": "Book a spa appointment",
+        "label": "yellow"
+    },
+    {
+        "text": "Buy a new water filter for fridge",
+        "label": "yellow"
+    },
+    {
+        "text": "Make a dentist appointment",
+        "label": "yellow"
+    },
+    {
+        "text": "Write an outline for a blog post",
+        "label": "green"
+    },
+    {
+        "text": "Confirm flight check-in",
+        "label": "red"
+    },
+    {
+        "text": "Update work portfolio",
+        "label": "green"
+    },
+    {
+        "text": "Bake cookies for bake sale",
+        "label": "yellow"
+    },
+    {
+        "text": "Reorganize closet",
+        "label": "green"
+    },
+    {
+        "text": "Get flu shot",
+        "label": "red"
+    },
+    {
+        "text": "Pick up a gift for secret santa",
+        "label": "yellow"
+    },
+    {
+        "text": "Take a yoga class",
+        "label": "green"
+    },
+    {
+        "text": "Call utility company about bill error",
+        "label": "yellow"
+    },
+    {
+        "text": "Schedule a car maintenance appointment",
+        "label": "yellow"
+    },
+    {
+        "text": "Send out holiday cards",
+        "label": "green"
+    },
+    {
+        "text": "Submit final essay for English class",
+        "label": "red"
+    },
+    {
+        "text": "Study for upcoming math exam",
+        "label": "red"
+    },
+    {
+        "text": "Complete science project before the deadline",
+        "label": "red"
+    },
+    {
+        "text": "Prepare for oral presentation in history class",
+        "label": "red"
+    },
+    {
+        "text": "Finish lab report for chemistry",
+        "label": "red"
+    },
+    {
+        "text": "Submit application for scholarship",
+        "label": "red"
+    },
+    {
+        "text": "Revise notes for final exam",
+        "label": "red"
+    },
+    {
+        "text": "Write research paper on climate change",
+        "label": "red"
+    },
+    {
+        "text": "Complete group project for sociology",
+        "label": "red"
+    },
+    {
+        "text": "Turn in art portfolio for grading",
+        "label": "red"
+    },
+    {
+        "text": "Meet with academic advisor to discuss schedule",
+        "label": "red"
+    },
+    {
+        "text": "Submit homework assignment for computer science",
+        "label": "red"
+    },
+    {
+        "text": "Attend study group for physics class",
+        "label": "red"
+    },
+    {
+        "text": "Prepare flashcards for biology quiz",
+        "label": "red"
+    },
+    {
+        "text": "Submit final grades for peer review",
+        "label": "red"
+    },
+    {
+        "text": "Submit final thesis for university degree",
+        "label": "red"
+    },
+    {
+        "text": "Complete revision for end-of-term exams",
+        "label": "red"
+    },
+    {
+        "text": "Turn in geography fieldwork report",
+        "label": "red"
+    },
+    {
+        "text": "Finish final project for IB",
+        "label": "red"
+    },
+    {
+        "text": "Submit coursework for A-Level physics",
+        "label": "red"
+    },
+    {
+        "text": "Prepare oral defense for master's dissertation",
+        "label": "red"
+    },
+    {
+        "text": "Complete final presentation for global studies course",
+        "label": "red"
+    },
+    {
+        "text": "Submit extended essay for diploma",
+        "label": "red"
+    },
+    {
+        "text": "Finish data analysis for research paper",
+        "label": "red"
+    },
+    {
+        "text": "Submit university application",
+        "label": "red"
+    },
+    {
+        "text": "Revise notes for upcoming midterm exams",
+        "label": "yellow"
+    },
+    {
+        "text": "Prepare outline for sociology essay",
+        "label": "yellow"
+    },
+    {
+        "text": "Meet with tutor for French language practice",
+        "label": "yellow"
+    },
+    {
+        "text": "Research literature for comparative politics assignment",
+        "label": "yellow"
+    },
+    {
+        "text": "Schedule a group study session for chemistry",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize materials for literature review",
+        "label": "yellow"
+    },
+    {
+        "text": "Plan research methodology for economics project",
+        "label": "yellow"
+    },
+    {
+        "text": "Complete reading list for history class",
+        "label": "yellow"
+    },
+    {
+        "text": "Meet with academic advisor to discuss exchange program options",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize notes and handouts for next term",
+        "label": "green"
+    },
+    {
+        "text": "Update planner with deadlines for term assignments",
+        "label": "green"
+    },
+    {
+        "text": "Attend optional workshop on academic writing",
+        "label": "green"
+    },
+    {
+        "text": "Back up digital class materials and notes",
+        "label": "green"
+    },
+    {
+        "text": "Practice meditation for stress relief during finals",
+        "label": "green"
+    },
+    {
+        "text": "Review lecture recordings from last semester",
+        "label": "green"
+    },
+    {
+        "text": "Organize textbooks and materials for charity donation",
+        "label": "green"
+    },
+    {
+        "text": "Attend extra-curricular coding club meeting",
+        "label": "green"
+    },
+    {
+        "text": "Update personal academic blog with latest school activities",
+        "label": "green"
+    },
+    {
+        "text": "Review class notes before final revision period",
+        "label": "green"
+    },
+    {
+        "text": "Submit passport application before deadline",
+        "label": "red"
+    },
+    {
+        "text": "Pay overdue rent",
+        "label": "red"
+    },
+    {
+        "text": "Book urgent doctor's appointment for health check-up",
+        "label": "red"
+    },
+    {
+        "text": "Renew driver's license before expiration",
+        "label": "red"
+    },
+    {
+        "text": "File tax returns before penalty date",
+        "label": "red"
+    },
+    {
+        "text": "Send RSVP for wedding invitation",
+        "label": "red"
+    },
+    {
+        "text": "Prepare for final job interview",
+        "label": "red"
+    },
+    {
+        "text": "Pay outstanding credit card balance",
+        "label": "red"
+    },
+    {
+        "text": "Submit insurance claim paperwork",
+        "label": "red"
+    },
+    {
+        "text": "Confirm travel visa requirements for upcoming trip",
+        "label": "red"
+    },
+    {
+        "text": "Schedule appointment with financial advisor",
+        "label": "yellow"
+    },
+    {
+        "text": "Plan holiday trip itinerary",
+        "label": "yellow"
+    },
+    {
+        "text": "Start researching home renovation ideas",
+        "label": "yellow"
+    },
+    {
+        "text": "Update budget for next month",
+        "label": "yellow"
+    },
+    {
+        "text": "Meet with family to plan upcoming reunion",
+        "label": "yellow"
+    },
+    {
+        "text": "Sign up for photography workshop",
+        "label": "yellow"
+    },
+    {
+        "text": "Buy a gift for upcoming friend's birthday",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize paperwork for home insurance renewal",
+        "label": "yellow"
+    },
+    {
+        "text": "Schedule a car maintenance check-up",
+        "label": "yellow"
+    },
+    {
+        "text": "Plan a weekend hike with friends",
+        "label": "yellow"
+    },
+    {
+        "text": "Sort through old family photos",
+        "label": "green"
+    },
+    {
+        "text": "Start a new fitness routine",
+        "label": "green"
+    },
+    {
+        "text": "Organize closet and donate old clothes",
+        "label": "green"
+    },
+    {
+        "text": "Clean out garage or storage space",
+        "label": "green"
+    },
+    {
+        "text": "Update digital photo album",
+        "label": "green"
+    },
+    {
+        "text": "Try a new hobby",
+        "label": "green"
+    },
+    {
+        "text": "Start a personal blog or journal",
+        "label": "green"
+    },
+    {
+        "text": "Plan a monthly budget review",
+        "label": "green"
+    },
+    {
+        "text": "Buy indoor plants for home decoration",
+        "label": "green"
+    },
+    {
+        "text": "Research recipes for healthy meal planning",
+        "label": "green"
+    },
+    {
+        "text": "Submit final project report to client",
+        "label": "red"
+    },
+    {
+        "text": "Prepare for tomorrow's board meeting",
+        "label": "red"
+    },
+    {
+        "text": "Finish drafting presentation slides for CEO review",
+        "label": "red"
+    },
+    {
+        "text": "Respond to urgent client emails",
+        "label": "red"
+    },
+    {
+        "text": "Submit budget proposal for approval",
+        "label": "red"
+    },
+    {
+        "text": "Meet with HR to discuss compliance issues",
+        "label": "red"
+    },
+    {
+        "text": "Prepare financial statements for quarterly review",
+        "label": "red"
+    },
+    {
+        "text": "Resolve customer complaints before end of day",
+        "label": "red"
+    },
+    {
+        "text": "Submit feedback on colleague's performance review",
+        "label": "red"
+    },
+    {
+        "text": "Update client on project progress and deliverables",
+        "label": "red"
+    },
+    {
+        "text": "Schedule team meeting for project updates",
+        "label": "yellow"
+    },
+    {
+        "text": "Review and organize current work documentation",
+        "label": "yellow"
+    },
+    {
+        "text": "Start research for new product development",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize monthly reports for internal review",
+        "label": "yellow"
+    },
+    {
+        "text": "Create new workflows for task automation",
+        "label": "yellow"
+    },
+    {
+        "text": "Plan next quarter's objectives with the team",
+        "label": "yellow"
+    },
+    {
+        "text": "Update employee handbook with latest policy changes",
+        "label": "yellow"
+    },
+    {
+        "text": "Prepare agenda for next department meeting",
+        "label": "yellow"
+    },
+    {
+        "text": "Send out invitations for upcoming corporate event",
+        "label": "yellow"
+    },
+    {
+        "text": "Review contracts for upcoming partnerships",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize digital work files and folders",
+        "label": "green"
+    },
+    {
+        "text": "Review and update LinkedIn profile",
+        "label": "green"
+    },
+    {
+        "text": "Plan team-building activity for next month",
+        "label": "green"
+    },
+    {
+        "text": "Schedule one-on-one meetings with team members",
+        "label": "green"
+    },
+    {
+        "text": "Attend online training course for skill development",
+        "label": "green"
+    },
+    {
+        "text": "Clean up office desk and workspace",
+        "label": "green"
+    },
+    {
+        "text": "Catch up on industry-related news and updates",
+        "label": "green"
+    },
+    {
+        "text": "Research new software tools for productivity",
+        "label": "green"
+    },
+    {
+        "text": "Organize shared project files for better collaboration",
+        "label": "green"
+    },
+    {
+        "text": "Schedule feedback session with clients",
+        "label": "green"
+    },
+    {
+        "text": "Pick up child from school event",
+        "label": "red"
+    },
+    {
+        "text": "Help with last-minute school project",
+        "label": "red"
+    },
+    {
+        "text": "Schedule emergency doctor appointment for family member",
+        "label": "red"
+    },
+    {
+        "text": "Plan urgent family meeting to discuss upcoming event",
+        "label": "red"
+    },
+    {
+        "text": "Prepare for family dinner with guests arriving tonight",
+        "label": "red"
+    },
+    {
+        "text": "Pick up medication for family member",
+        "label": "red"
+    },
+    {
+        "text": "Resolve issue with child’s school fees",
+        "label": "red"
+    },
+    {
+        "text": "Renew car insurance for family vehicle",
+        "label": "red"
+    },
+    {
+        "text": "Book flight for family emergency",
+        "label": "red"
+    },
+    {
+        "text": "Submit health insurance claim for family member",
+        "label": "red"
+    },
+    {
+        "text": "Schedule dentist appointments for the family",
+        "label": "yellow"
+    },
+    {
+        "text": "Help kids with homework over the weekend",
+        "label": "yellow"
+    },
+    {
+        "text": "Plan family vacation for the upcoming holidays",
+        "label": "yellow"
+    },
+    {
+        "text": "Prepare family budget for the month",
+        "label": "yellow"
+    },
+    {
+        "text": "Research family-friendly activities for the weekend",
+        "label": "yellow"
+    },
+    {
+        "text": "Buy groceries for the week’s family meals",
+        "label": "yellow"
+    },
+    {
+        "text": "Organize family photo album",
+        "label": "yellow"
+    },
+    {
+        "text": "Update emergency contact details for kids' school",
+        "label": "yellow"
+    },
+    {
+        "text": "Plan family game night",
+        "label": "yellow"
+    },
+    {
+        "text": "Set up playdate for kids",
+        "label": "yellow"
+    },
+    {
+        "text": "Take family for a picnic",
+        "label": "green"
+    },
+    {
+        "text": "Plan a family movie night",
+        "label": "green"
+    },
+    {
+        "text": "Call grandparents for a catch-up",
+        "label": "green"
+    },
+    {
+        "text": "Help kids clean up their room",
+        "label": "green"
+    },
+    {
+        "text": "Organize family photos on the computer",
+        "label": "green"
+    },
+    {
+        "text": "Start a new family tradition",
+        "label": "green"
+    },
+    {
+        "text": "Research new family recipes to try",
+        "label": "green"
+    },
+    {
+        "text": "Water the family garden",
+        "label": "green"
+    },
+    {
+        "text": "Take kids for a bike ride",
+        "label": "green"
+    },
+    {
+        "text": "Clean out the garage with the family",
+        "label": "green"
+    }
+]

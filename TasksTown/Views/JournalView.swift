@@ -6,11 +6,29 @@
 //
 
 import SwiftUI
+import GRDB
+import GRDBQuery
+
+struct TaskItemsRequest: ValueObservationQueryable {
+    static var defaultValue: [TaskItem] { [] }
+
+    func fetch(_ db: Database) throws -> [TaskItem] {
+        try TaskItem.fetchAll(db)
+    }
+}
 
 struct JournalView: View {
+    @State var showAddItemView = false
+    
+    private let db = LocalDatabase.database
+    @Query(TaskItemsRequest()) var taskItems: [TaskItem]
+    
     var body: some View {
         NavigationStack {
             List {
+                
+                // MARK: Filter Selector
+                
                 Section {
                     ScrollView(.horizontal) {
                         HStack(spacing:15) {
@@ -42,8 +60,11 @@ struct JournalView: View {
                 .listRowSeparator(.hidden)
                 .listSectionSpacing(20)
                 .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                
+                // MARK: Tasks & Events
+                
                 Section {
-                    ForEach(0..<4) { _ in
+                    ForEach(taskItems) { taskItem in
                         NavigationLink {
                             Text("Hello")
                         } label: {
@@ -51,12 +72,12 @@ struct JournalView: View {
                                 Image(systemName: "circle")
                                     .font(.title2)
                                 VStack(alignment:.leading) {
-                                    Text("Task")
+                                    Text(taskItem.name)
                                         .font(.headline)
                                     HStack(spacing: 5) {
                                         Image(systemName: "calendar")
                                             .font(.title2)
-                                        Text("Due Tomorrow")
+                                        //Text(formattedDueDate(dateBinding: taskItem.date, dateTypeBinding: taskItem.dateType))
                                     }
                                 }
                                 Spacer()
@@ -96,6 +117,8 @@ struct JournalView: View {
                 }
                 .listRowSeparator(.hidden)
                 .headerProminence(.increased)
+                
+                // MARK: Saved
                 
                 Section {
                     RoundedRectangle(cornerRadius: 5)
@@ -154,10 +177,23 @@ struct JournalView: View {
             .listStyle(.plain)
             .listSectionSeparator(.hidden)
             .listSectionSpacing(.compact)
+            .toolbar {
+                ToolbarItem(placement:.topBarTrailing) {
+                    Button {
+                        showAddItemView.toggle()
+                    } label: {
+                        Label("Add", systemImage: "plus")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showAddItemView) {
+            AddItemView()
         }
     }
 }
 
 #Preview {
     JournalView()
+        .databaseContext(.readWrite { LocalDatabase.database.writer })
 }

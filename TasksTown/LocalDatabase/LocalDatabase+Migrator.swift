@@ -21,6 +21,8 @@ extension LocalDatabase {
         migrator.registerMigration("v1.0") { db in
             try createUserTable(db)
             try createTestTable(db)
+            try createTagTable(db)
+            try createTaskItemTable(db)
         }
 
         return migrator
@@ -41,9 +43,29 @@ extension LocalDatabase {
         }
     }
     
+    private func createTagTable(_ db: Database) throws {
+        try db.create(table: "tag") { table in
+            table.primaryKey("id", .text)
+            table.column("name", .text).notNull()
+        }
+    }
+    
     private func createTestTable(_ db: Database) throws {
         try db.create(table: "test") { table in
             table.column("name", .text).notNull()
+        }
+    }
+    
+    private func createTaskItemTable(_ db: Database) throws {
+        try db.create(table: "taskItem") { table in
+            table.primaryKey("id", .text)
+            table.column("name", .text).notNull()
+            table.column("description", .text)
+            table.column("dueDate", .datetime)
+            table.column("isCompleted", .boolean).notNull()
+            table.column("dateType", .text).notNull()
+            table.column("color", .text).notNull()
+            table.column("tagID", .text)
         }
     }
 }

@@ -22,8 +22,9 @@ struct LocalDatabase {
     }
 }
 
-// MARK: - Writes
+// MARK: - Writes to database
 extension LocalDatabase {
+    
     func insertTestData(
         name: String
     ) async throws {
@@ -33,4 +34,14 @@ extension LocalDatabase {
             print("Inserted test data")
         }
     }
+    
+    func insertTaskItem(
+        _ taskItemToInsert: TaskItem
+    ) async throws {
+        try await writer.write { db in
+            var taskItem = taskItemToInsert
+            try taskItem.insert(db)
+        }
+    }
+    
 }
