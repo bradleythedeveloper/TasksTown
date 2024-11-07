@@ -9,9 +9,16 @@ import SwiftUI
 import GRDBQuery
 import GRDB
 
+class DBTest: Codable, Identifiable, FetchableRecord, PersistableRecord {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
 struct DatabaseAccessTest: View {
     @State var name: String = ""
-    @Query(TestsRequest()) var tests: [Test]
+    @Query(TestsRequest()) var tests: [DBTest]
     private let db = LocalDatabase.database
     
     func createTestData() async {
@@ -38,10 +45,10 @@ struct DatabaseAccessTest: View {
 }
 
 struct TestsRequest: ValueObservationQueryable {
-    static var defaultValue: [Test] { [] }
+    static var defaultValue: [DBTest] { [] }
 
-    func fetch(_ db: Database) throws -> [Test] {
-        try Test.fetchAll(db)
+    func fetch(_ db: Database) throws -> [DBTest] {
+        try DBTest.fetchAll(db)
     }
 }
 

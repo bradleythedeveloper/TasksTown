@@ -9,25 +9,25 @@ import SwiftUI
 import GRDB
 import GRDBQuery
 
-struct TaskItemsRequest: ValueObservationQueryable {
-    static var defaultValue: [TaskItem] { [] }
-
-    func fetch(_ db: Database) throws -> [TaskItem] {
-        try TaskItem.fetchAll(db)
-    }
-}
-
+// MARK: - Main View
 struct JournalView: View {
+    
+    // MARK: - Defining variables
+    
+    //
     @State var showAddItemView = false
     
-    private let db = LocalDatabase.database
-    @Query(TaskItemsRequest()) var taskItems: [TaskItem]
+    // Database connections
+    //private let db = LocalDatabase.database
+    //@Query(TaskItemsRequest()) var taskItems: [TaskItem]
+    
+    // MARK: - Body
     
     var body: some View {
         NavigationStack {
             List {
                 
-                // MARK: Filter Selector
+                // MARK: - Filter Selector
                 
                 Section {
                     ScrollView(.horizontal) {
@@ -61,10 +61,14 @@ struct JournalView: View {
                 .listSectionSpacing(20)
                 .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                 
-                // MARK: Tasks & Events
+                // MARK: - Tasks & Events
                 
                 Section {
-                    ForEach(taskItems) { taskItem in
+//                    ForEach(taskItems) { taskItem in
+//                        //Text("\(taskItem.name)")
+//                        taskItem.name
+//                    }
+                    ForEach(1..<3) { _ in
                         NavigationLink {
                             Text("Hello")
                         } label: {
@@ -72,11 +76,13 @@ struct JournalView: View {
                                 Image(systemName: "circle")
                                     .font(.title2)
                                 VStack(alignment:.leading) {
-                                    Text(taskItem.name)
-                                        .font(.headline)
+//                                    Text(taskItem.wrappedValue.)
+//                                        .font(.headline)
+                                    Text("test")
                                     HStack(spacing: 5) {
                                         Image(systemName: "calendar")
                                             .font(.title2)
+                                        //Text("\(formattedDueDate(dateBinding: taskItem.date, dateTypeBinding: taskItem.dateType))")
                                         //Text(formattedDueDate(dateBinding: taskItem.date, dateTypeBinding: taskItem.dateType))
                                     }
                                 }
@@ -195,5 +201,5 @@ struct JournalView: View {
 
 #Preview {
     JournalView()
-        .databaseContext(.readWrite { LocalDatabase.database.writer })
+        //.databaseContext(.readWrite { LocalDatabase.database.writer })
 }

@@ -18,24 +18,26 @@ struct AddItemView: View {
     @Environment(\.dismiss) var dismiss
     
     // Database connnection
-    private let db = LocalDatabase.database
+    //private let db = LocalDatabase.database
     
     // Type of item being added
     @State var itemType: ItemType = .task
     
     // Parameters applicable across all item types
     @State var date: Date = Date()
-    @State var dateType: Item.DateType = .due
-    @State var color: Item.PriorityColor = .none
+    @State var dateType: DateType = .due
+    @State var color: PriorityColor = .none
     @State var tag: Tag?
     
     // Intialising objects for each item type
-    @State var task = TaskItem(name: "", description: "")
+    @State var task = TaskItem()
     
     // Configuring whether sub-sheets are shown
     @State var showDateSubSheet = false
     
     @State var testTag: String = ""
+    
+    // MARK: - Body
     
     var body: some View {
         NavigationStack {
@@ -68,7 +70,7 @@ struct AddItemView: View {
                                 .fontWeight(.semibold)
                                 .padding(.top)
                             // TextField for task description
-                            TextField("Add a description", text: $task.description, axis: .vertical)
+                            //TextField("Add a description", text: $task.description, axis: .vertical)
                         }
                     }
                 }
@@ -81,7 +83,7 @@ struct AddItemView: View {
                     DisclosureGroup { // Allows the content to be opened and closed
                         VStack {
                             Picker("", selection: $dateType) {
-                                ForEach(Item.DateType.allCases) { dateType in
+                                ForEach(DateType.allCases) { dateType in
                                     Text(dateType.rawValue).tag(dateType)
                                 }
                             }
@@ -206,13 +208,8 @@ extension AddItemView {
         task.dueDate = date
         task.dateType = dateType
         task.color = color
-        task.tag = tag
-        do {
-            try await db.insertTaskItem(task)
-            dismiss()
-        } catch {
-            print(error)
-        }
+        task.tagID = tag?.id
+        task.addToDatabase()
     }
 }
 
@@ -223,7 +220,7 @@ extension AddItemView {
 ///   - dateBinding: Binding to a Date value
 ///   - dateTypeBinding: Binding to an Item.DateType value
 /// - Returns: Formatted date in the form of a String
-func formattedDueDate(dateBinding: Binding<Date>, dateTypeBinding: Binding<Item.DateType>) -> String {
+func formattedDueDate(dateBinding: Binding<Date>, dateTypeBinding: Binding<DateType>) -> String {
     let date = dateBinding.wrappedValue
     let dateType = dateTypeBinding.wrappedValue
     let formatter = DateFormatter()
@@ -260,7 +257,7 @@ struct DetailDisclosureGroupLabel: View {
 }
 
 struct ColorButtonLabel: View {
-    var color: Item.PriorityColor
+    var color: PriorityColor
     var body: some View {
         HStack {
             Image(systemName: "\(color.icon)")
@@ -289,8 +286,8 @@ struct AISuggestionLabel: View {
 }
 
 struct ColorSelectButton: View {
-    var color: Item.PriorityColor
-    var colorBinding: Binding<Item.PriorityColor>
+    var color: PriorityColor
+    var colorBinding: Binding<PriorityColor>
     var body: some View {
         ColorButtonLabel(color: color)
             .overlay(alignment:.bottomTrailing) {
@@ -312,7 +309,7 @@ struct ColorSelectButton: View {
 // MARK: - Styles
 
 struct ColorButtonToggleStyle: ToggleStyle {
-    var color: Item.PriorityColor
+    var color: PriorityColor
     func makeBody(configuration: ToggleStyleConfiguration) -> some View {
         HStack {
             Button {

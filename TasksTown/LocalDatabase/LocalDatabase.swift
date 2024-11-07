@@ -29,19 +29,19 @@ extension LocalDatabase {
         name: String
     ) async throws {
         try await writer.write { db in
-            let test = Test(name: name)
+            let test = DBTest(name: name)
             try test.insert(db)
             print("Inserted test data")
         }
     }
     
-    func insertTaskItem(
-        _ taskItemToInsert: TaskItem
-    ) async throws {
-        try await writer.write { db in
-            var taskItem = taskItemToInsert
-            try taskItem.insert(db)
-        }
-    }
+//    func insertTaskItem(
+//        _ taskItemToInsert: TaskItem
+//    ) async throws {
+//        try await writer.write { db in
+//            let taskItem = taskItemToInsert
+//            try taskItem.insert(db)
+//        }
+//    }
     
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2421B6712CDCEDDF004B68C7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2421B6702CDCEDDF004B68C7 /* FirebaseAnalytics */; };
+		2421B6732CDCEDDF004B68C7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2421B6722CDCEDDF004B68C7 /* FirebaseAuth */; };
+		2421B6752CDCEDDF004B68C7 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2421B6742CDCEDDF004B68C7 /* FirebaseCore */; };
+		2421B6772CDCEDDF004B68C7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2421B6762CDCEDDF004B68C7 /* FirebaseFirestore */; };
+		2421B6792CDCEDDF004B68C7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2421B6782CDCEDDF004B68C7 /* FirebaseStorage */; };
 		244DE38D2CCBB35500781041 /* GRDBQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 244DE38C2CCBB35500781041 /* GRDBQuery */; };
 		24DFAD352CCBAFE6004A5430 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 24DFAD342CCBAFE6004A5430 /* GRDB */; };
 /* End PBXBuildFile section */
@@ -29,7 +34,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				244DE38D2CCBB35500781041 /* GRDBQuery in Frameworks */,
+				2421B6752CDCEDDF004B68C7 /* FirebaseCore in Frameworks */,
 				24DFAD352CCBAFE6004A5430 /* GRDB in Frameworks */,
+				2421B6712CDCEDDF004B68C7 /* FirebaseAnalytics in Frameworks */,
+				2421B6792CDCEDDF004B68C7 /* FirebaseStorage in Frameworks */,
+				2421B6732CDCEDDF004B68C7 /* FirebaseAuth in Frameworks */,
+				2421B6772CDCEDDF004B68C7 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +84,11 @@
 			packageProductDependencies = (
 				24DFAD342CCBAFE6004A5430 /* GRDB */,
 				244DE38C2CCBB35500781041 /* GRDBQuery */,
+				2421B6702CDCEDDF004B68C7 /* FirebaseAnalytics */,
+				2421B6722CDCEDDF004B68C7 /* FirebaseAuth */,
+				2421B6742CDCEDDF004B68C7 /* FirebaseCore */,
+				2421B6762CDCEDDF004B68C7 /* FirebaseFirestore */,
+				2421B6782CDCEDDF004B68C7 /* FirebaseStorage */,
 			);
 			productName = TasksTown;
 			productReference = 24DFAD1A2CCBADA2004A5430 /* TasksTown.app */;
@@ -106,6 +121,7 @@
 			packageReferences = (
 				24DFAD332CCBAFE6004A5430 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 				244DE38B2CCBB35500781041 /* XCRemoteSwiftPackageReference "GRDBQuery" */,
+				2421B66F2CDCEDDF004B68C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 24DFAD1B2CCBADA2004A5430 /* Products */;
@@ -362,6 +378,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2421B66F2CDCEDDF004B68C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
 		244DE38B2CCBB35500781041 /* XCRemoteSwiftPackageReference "GRDBQuery" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/groue/GRDBQuery";
@@ -381,6 +405,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2421B6702CDCEDDF004B68C7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2421B66F2CDCEDDF004B68C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2421B6722CDCEDDF004B68C7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2421B66F2CDCEDDF004B68C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2421B6742CDCEDDF004B68C7 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2421B66F2CDCEDDF004B68C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		2421B6762CDCEDDF004B68C7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2421B66F2CDCEDDF004B68C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2421B6782CDCEDDF004B68C7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2421B66F2CDCEDDF004B68C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		244DE38C2CCBB35500781041 /* GRDBQuery */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 244DE38B2CCBB35500781041 /* XCRemoteSwiftPackageReference "GRDBQuery" */;
